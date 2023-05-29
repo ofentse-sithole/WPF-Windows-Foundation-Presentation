@@ -1,0 +1,28 @@
+﻿<Page x:Class="ST10104487_POE.HomeLoanBuy"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ST10104487_POE"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="HomeLoanBuy">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" Text="HomeLoan Buying Property" VerticalAlignment="Top" Height="25" Width="180"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,95,0,0" TextWrapping="Wrap" Text="Please enter the purchasing price" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,160,0,0" TextWrapping="Wrap" Text="Please enter total deposit amount" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="93,280,0,0" TextWrapping="Wrap" Text="Please enter the interest amount" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="71,226,0,0" TextWrapping="Wrap" Text="Please enter the number of months between 240 and 360" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_Months" HorizontalAlignment="Left" Margin="530,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBox_Interest_Buy" HorizontalAlignment="Left" Margin="530,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBox_Deposit_Buy" HorizontalAlignment="Left" Margin="530,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBox_Purchase_Buy" HorizontalAlignment="Left" Margin="530,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="555,508,0,0" VerticalAlignment="Top" Height="25" Width="70" Click="Button_Click"/>
+        <TextBox x:Name="TextBox_AvailableMoney" HorizontalAlignment="Center" Margin="0,417,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" Height="58"/>
+        <Button x:Name="Button_Calculate_AvailableMoney" Content="Click to Calculate" HorizontalAlignment="Center" Margin="0,508,0,0" VerticalAlignment="Top" Height="26" Width="104" Click="Button_Calculate_AvailableMoney_Click"/>
+        <TextBox x:Name="TextBox_Qualify" HorizontalAlignment="Center" Margin="0,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Height="40"/>
+        <Button Content="Click to Check Status" HorizontalAlignment="Left" Margin="93,508,0,0" VerticalAlignment="Top" Width="130" Height="25" Click="Button_Click_1"/>
+
+    </Grid>
+</Page>
